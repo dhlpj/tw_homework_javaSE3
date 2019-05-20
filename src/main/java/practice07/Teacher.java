@@ -31,9 +31,9 @@ public class Teacher extends Person {
 
     public String introduceWith(Student student) {
         if (student.getKlass().getNumber().intValue() == this.klass.getNumber().intValue()) {
-            return super.introduce() + " I am a Teacher. I teach " + student.getName();
+            return super.introduce() + " I am a Teacher. I teach " + student.getName()+".";
         } else {
-            return super.introduce() + "I am a Teacher. I don't teach " + student.getName();
+            return super.introduce() + " I am a Teacher. I don't teach " + student.getName()+".";
         }
     }
 
