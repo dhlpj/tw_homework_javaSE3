@@ -42,7 +42,7 @@ public class Klass {
     }
 
     public void assignLeader(Student leader) {
-        if (students.size() == 0) {
+        if (!students.contains(leader)) {
             System.out.print("It is not one of us.\n");
             return;
         }
